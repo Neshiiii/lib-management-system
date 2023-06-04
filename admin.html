@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Admin</title>
+    <link
+        rel="stylesheet"
+        href="headingstyle.css"
+    />
+</head>
+<body>
+    <header>
+        <h1>Admin Login!</h1>
+    </header>
+    
+    <h2>Admin login</h2>
+    <div class="loginform">
+        <form id="login" href="../diglib/goal/list.html" method="post">
+            <div class="imgcontainer">
+                <img src="./images/avatar.jpeg" alt="Avatar" class="avatar">
+            </div>
+                <table class="centre">
+                    <tr><td><label for="firstname"><b>Firstname:</b> </label></td>
+                    <td><input 
+                        type="text" 
+                        id="firstname" 
+                        name="firstname"
+                        placeholder="Enter firstname"
+                        required
+                        ><br /></td></tr>  
+                    <tr><td><label for="lastname"> <b>Lastname:</b> </label></td>
+                    <td><input 
+                        type="text" 
+                        id="lastname" 
+                        name="lastname"
+                        placeholder="Enter lastname"
+                        required
+                        ><br /></td></tr>
+                    <tr><td><label for="email"><b>Email :</b></label></td>
+                    <td><input 
+                        type="email" 
+                        id="email" 
+                        name="email"
+                        placeholder="Enter email"
+                        required
+                        ><br /></td></tr>
+                    <tr><td><label for="gender"><b>Gender :</b></label><br /></td>
+                    <td><input 
+                        type="radio" 
+                        id="gender" 
+                        name="gender" 
+                        value="Male"
+                        required
+                        >Male
+                        <input 
+                        type="radio" 
+                        id="gender" 
+                        name="gender" 
+                        value="Female" 
+                        required
+                        >Female<br /></td></tr>
+                    <tr><td><label for="date"><b>Enter the date of login :</b></label></td>
+                    <td><input 
+                        type="date" 
+                        id="date" 
+                        name="today's date"
+                        required
+                        ><br /></td></tr>
+                    <tr><td><label for="password"><b>Enter password :</b></label></td>
+                        <td><input 
+                            type="password" 
+                            id="password" 
+                            name="password"
+                            placeholder="Enter password"
+                            required
+                            ><br /></td></tr>
+                    <tr><td><label for="submit"></label></td>
+                    <td><button class="submit" type="submit" value="login">Login</button></td>
+                    <td><button class="reset" type="reset" value="reset">Reset</button></td></td></tr>
+                </table>
+               
+        
+        </form>   
+    </div>
+</body>
+</html>

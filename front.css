@@ -1,0 +1,22 @@
+html{
+    background-image: url('./images/library.jpeg');
+}
+
+header {
+    background-color: #A0937D;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: larger;
+  }
+a{
+    text-decoration: none;  
+    text-align: center;  
+    font-size: 20px;  
+    padding: 9px;  
+}
+header h1{
+    margin-bottom: 3pc;
+}
+

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link
+        rel="stylesheet"
+        href="./style.css"
+    />
+    
+</head>
+<body>
+    <header>
+        <h1>List of books</h1>
+    </header>
+    <ol style="list-style: decimal inside;">
+        <div class="scrollTable">
+            <div id="filters">
+                <label for="titleFilter">Title:</label>
+                <input type="text" id="titleFilter" onkeyup="applyFilters()">
+                
+                <label for="authorFilter">Author:</label>
+                <input type="text" id="authorFilter" onkeyup="applyFilters()">
+                
+                <label for="subjectFilter">Subject:</label>
+                <input type="text" id="subjectFilter" onkeyup="applyFilters()">
+                
+                <label for="dateFilter">Publish Date:</label>
+                <input type="text" id="dateFilter" onkeyup="applyFilters()">
+              </div>
+            <table class="t1"  >
+           
+                <tr style="height: 50px;">
+                    <th>S.No</th>
+                    <th id="titleFilter">Title</th>
+                    <th id="authorFilter">Author</th>
+                    <th id="genreFilter">Genre</th>
+                    <th id="dateFilter">Publish-Date</th>
+                    <th>Read Now</th>
+                    <th>Buy Now</th>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">Romeo and Juliet</td>
+                    <td style="text-align: center;">William Shakespeare</td>
+                    <td style="text-align: center;">Drama</td>
+                    <td style="text-align: center;">Nov 1, 1998</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/1513/pg1513-images.html" target="_blank">Romeo And Juliet</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/Romeo-Juliet-William-Shakespeare/dp/9380816278" target="_blank">Romeo And Juliet-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">Moby Dick Or, The Whale</td>
+                    <td style="text-align: center;">Herman Melville</td>
+                    <td style="text-align: center;">Fiction</td>
+                    <td style="text-align: center;">Jul 1, 2001</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/2701/pg2701-images.html" target="_blank">Moby Dick Or, The Whale</a></td>
+                    <td><a href="https://www.amazon.in/Moby-Dick-Whale-Herman-Melville/dp/8175992778" target="_blank">Moby Dick Or,The Whale-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">A Room with a View</td>
+                    <td style="text-align: center;">E. M. Forster</td>
+                    <td style="text-align: center;">Humor</td>
+                    <td style="text-align: center;">May 1, 2001</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/2641/pg2641-images.html" target="_blank">A Room With A View</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/Room-View-M-Forster/dp/8194647312" target="_blank">A Room With A View-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">Middlemarch</td>
+                    <td style="text-align: center;">George Eliot</td>
+                    <td style="text-align: center;">Fiction</td>
+                    <td style="text-align: center;">Jul 1, 1994</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/145/pg145-images.html" target="_blank">Middlemarch</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/Middlemarch-Wordsworth-Classics-George-Eliot/dp/1853262374" target="_blank">Middlemarch-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">Little Women</td>
+                    <td style="text-align: center;">Louisa May Alcott</td>
+                    <td style="text-align: center;">Fiction</td>
+                    <td style="text-align: center;">Aug 16, 2011</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/37106/pg37106-images.html" target="_blank">Little Women</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/Little-Bantam-Classics-Louisa-Alcott/dp/0553212753" target="_blank">Little Women-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">The Complete Works of William Shakespeare</td>
+                    <td style="text-align: center;">William Shakespeare</td>
+                    <td style="text-align: center;">Drama</td>
+                    <td style="text-align: center;">Jan 1, 1994</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/100/pg100-images.html" target="_blank">The Complete Works of William Shakespeare</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/Complete-William-Shakespeare-Special-Editions/dp/185326895X" target="_blank">The Complete Works of William Shakespeare-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">Dracula</td>
+                    <td style="text-align: center;">Bram Stoker</td>
+                    <td style="text-align: center;">Horror</td>
+                    <td style="text-align: center;">Oct 1, 1995</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/345/pg345-images.html" target="_blank">Dracula</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/Dracula-Bram-Stoker/dp/8172344775" target="_blank">Dracula-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">The Adventures of Sherlock Holmes</td>
+                    <td style="text-align: center;">Arthur Conan Doyle</td>
+                    <td style="text-align: center;">Dedective-Fiction</td>
+                    <td style="text-align: center;">Mar 1, 1999</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/1661/pg1661-images.html" target="_blank">The Adventures of Sherlock Holmes</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/Adventures-Sherlock-Holmes-Arthur-Conan/dp/8175993863" target="_blank">The Adventures of Sherlock Holmes-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">The Importance of Being Earnest: A Trivial Comedy for Serious People</td>
+                    <td style="text-align: center;">Oscar Wilde</td>
+                    <td style="text-align: center;">Humor</td>
+                    <td style="text-align: center;">Mar 1, 1997</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/844/pg844-images.html" target="_blank">The Importance of Being Earnest: A Trivial Comedy for Serious People</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/Importance-Being-Earnest-Oscar-Wilde/dp/8175992859" target="_blank">The Importance of Being Earnest: A Trivial Comedy for Serious People-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">A Modest Proposal</td>
+                    <td style="text-align: center;">Jonathan Swift</td>
+                    <td style="text-align: center;">Political Satire</td>
+                    <td style="text-align: center;">Oct 1, 1997</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/1080/pg1080-images.html" target="_blank">A Modest Proposal</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/Modest-Proposal-Jonathan-Swift/dp/1603863559" target="_blank">A Modest Proposal-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">Adventures of Huckleberry Finn</td>
+                    <td style="text-align: center;">Mark Twain</td>
+                    <td style="text-align: center;">Humor</td>
+                    <td style="text-align: center;">Jun 29, 2004</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/76/pg76-images.html" target="_blank">Adventures of Huckleberry Finn</a></td>
+                    <td style="text-align: center;"><a href="amazon.in/Adventures-Huckleberry-Finn-Collins-Classics/dp/0007351038" target="_blank">Adventures of Huckleberry Finn-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">A Passage to India</td>
+                    <td style="text-align: center;">E. M. Forster</td>
+                    <td style="text-align: center;">Political</td>
+                    <td style="text-align: center;">Jan 22, 2020</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/61221/pg61221-images.htmll" target="_blank">A Passage to India</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/Passage-India-Penguin-Classics/dp/014144116X" target="_blank">A Passage to India-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">Cranford</td>
+                    <td style="text-align: center;">Elizabeth Cleghorn Gaskell</td>
+                    <td style="text-align: center;">Fiction</td>
+                    <td style="text-align: center;">Jan 1, 1996</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/394/pg394-images.html" target="_blank">Cranford</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/Cranford-Elizabeth-Gaskell-Cleghorn/dp/1717588840" target="_blank">Cranford-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">Three Ghost Stories</td>
+                    <td style="text-align: center;">Charles Dickens</td>
+                    <td style="text-align: center;">Fiction</td>
+                    <td style="text-align: center;">Apr 1, 1998</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/1289/pg1289-images.html" target="_blank">Three Ghost Stories</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/Three-Ghost-Stories-Charles-Dickens-ebook/dp/B06ZYWLLCN" target="_blank">Three Ghost Stories-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">An Ideal Husband</td>
+                    <td style="text-align: center;">Oscar Wilde</td>
+                    <td style="text-align: center;">Humor</td>
+                    <td style="text-align: center;">Apr 1, 1997</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/885/pg885-images.html" target="_blank">An Ideal Husband</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/Ideal-Husband-Oscar-Wilde/dp/154802404X" target="_blank">An Ideal Husband-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">Alice's Adventures in Wonderland</td>
+                    <td style="text-align: center;">Lewis Carroll</td>
+                    <td style="text-align: center;">Fiction</td>
+                    <td style="text-align: center;">Jun 27, 2008</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/11/pg11-images.html" target="_blank">Alice's Adventures in Wonderland</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/Alices-Adventures-Wonderland-Lewis-Carroll/dp/8175992980" target="_blank">Alice's Adventures in Wonderland-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">The Great Gatsby</td>
+                    <td style="text-align: center;">F. Scott Fitzgerald</td>
+                    <td style="text-align: center;">Fiction</td>
+                    <td style="text-align: center;">Jan 17, 2021</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/64317/pg64317-images.html" target="_blank">The Great Gatsby</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/Great-Gatsby-F-Scott-Fitzgerald/dp/8172344562" target="_blank">The Great Gatsby-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">Oliver Twist</td>
+                    <td style="text-align: center;">Charles Dickens</td>
+                    <td style="text-align: center;">Fiction</td>
+                    <td style="text-align: center;">Nov 1, 1996</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/730/pg730-images.htmll" target="_blank">Oliver Twist</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/OLIVER-TWIST-CHARLES-DICKENS/dp/8129124564" target="_blank">Oliver Twist-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">The Adventures of Tom Sawyer, Complete</td>
+                    <td style="text-align: center;">Mark Twain</td>
+                    <td style="text-align: center;">Fiction</td>
+                    <td style="text-align: center;">Jul 1, 2004</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/74/pg74-images.html" target="_blank">The Adventures of Tom Sawyer, Complete</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/Adventures-Tom-Sawyer-Mark-Twain/dp/8175992913" target="_blank">The Adventures of Tom Sawyer, Complete-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">The Iliad</td>
+                    <td style="text-align: center;">Homer</td>
+                    <td style="text-align: center;">Literature</td>
+                    <td style="text-align: center;">Jul 1, 2004</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/6130/pg6130-images.html" target="_blank">The Iliad</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/Iliad-Penguin-Classics-Homer/dp/0140447946" target="_blank">The Iliad-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">The Republic</td>
+                    <td style="text-align: center;">Plato</td>
+                    <td style="text-align: center;">Political Satire</td>
+                    <td style="text-align: center;">Oct 1, 1998</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/1497/pg1497-images.html" target="_blank">The Republic</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/Republic-Plato/dp/9380816375" target="_blank">The Republic-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">The Turn of the Screw</td>
+                    <td style="text-align: center;">Henry James</td>
+                    <td style="text-align: center;">Horror</td>
+                    <td style="text-align: center;">Feb 1, 1995</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/209/pg209-images.html" target="_blank">The Turn of the Screw</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/Turn-Screw-Henry-James/dp/1612930999" target="_blank">The Turn of the Screw-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">The Lifted Veil</td>
+                    <td style="text-align: center;">George Eliot</td>
+                    <td style="text-align: center;">Fiction</td>
+                    <td style="text-align: center;">May 1, 2000</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/2165/pg2165-images.html" target="_blank">The Lifted Veil</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/Lifted-Veil-George-Eliot/dp/1542886058" target="_blank">The Lifted Veil-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">A Doll's House</td>
+                    <td style="text-align: center;">Henrik Ibsen</td>
+                    <td style="text-align: center;">Drama</td>
+                    <td style="text-align: center;">Mar 1, 2001</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/2542/pg2542-images.html" target="_blank">A Doll's House</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/Dolls-House-Henrik-Ibsen/dp/9350330687" target="_blank">A Doll's House-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">Crime and Punishment</td>
+                    <td style="text-align: center;">Fyodor Dostoyevsky</td>
+                    <td style="text-align: center;">Fiction</td>
+                    <td style="text-align: center;">Mar 28, 2006</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/2554/pg2554-images.html" target="_blank">Crime and Punishment</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/Crime-Punishment-Fyodor-Dostoyevsky/dp/9386538059" target="_blank">Crime and Punishment-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">A Woman of No Importance</td>
+                    <td style="text-align: center;">Oscar Wilde</td>
+                    <td style="text-align: center;">Drama</td>
+                    <td style="text-align: center;">Mar 1, 1997</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/854/pg854-images.html" target="_blank">A Woman of No Importance</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/Woman-No-Importance-Untold-American/dp/0735225311" target="_blank">A Woman of No Importance-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">As You Like It</td>
+                    <td style="text-align: center;">William Shakespeare</td>
+                    <td style="text-align: center;">Drama</td>
+                    <td style="text-align: center;">Nov 1, 1998</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/1523/pg1523-images.html" target="_blank">As You Like It</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/As-You-Like-William-Shakespeare/dp/9352231716" target="_blank">As You Like It-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">The King in Yellow</td>
+                    <td style="text-align: center;">Robert W. Chambers</td>
+                    <td style="text-align: center;">Short Stories</td>
+                    <td style="text-align: center;">Jul 1, 2005</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/8492/pg8492-images.html" target="_blank">The King in Yellow</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/King-Yellow-Deluxe-Robert-Chambers/dp/178227376X" target="_blank">The King in Yellow-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">Brother Jacob</td>
+                    <td style="text-align: center;">George Eliot</td>
+                    <td style="text-align: center;">Fiction</td>
+                    <td style="text-align: center;">May 1, 2000</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/2171/pg2171-images.html" target="_blank">Brother Jacob</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/Brother-Jacob-George-Eliot/dp/1544623933" target="_blank">Brother Jacob-Buy now</a></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center; display: list-item;"></td>
+                    <td style="text-align: center;">History of Tom Jones,A Foundling</td>
+                    <td style="text-align: center;">Henry Fielding</td>
+                    <td style="text-align: center;">Humor</td>
+                    <td style="text-align: center;">May 1, 2001</td>
+                    <td style="text-align: center;"><a href="https://www.gutenberg.org/cache/epub/6593/pg6593-images.html" target="_blank">History of Tom Jones,A Foundling</a></td>
+                    <td style="text-align: center;"><a href="https://www.amazon.in/History-Tom-Jones-Foundling-Complete/dp/9353424763" target="_blank">History of Tom Jones,A Foundling-Buy now</a></td>
+                </tr>
+            </table>
+        </div>
+    </ol>
+    <script src="./list.js"></script>
+</body>
+</html>
